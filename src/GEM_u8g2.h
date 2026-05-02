@@ -52,8 +52,12 @@
 // Macro constants (aliases) for u8g2 font families used to draw menu
 #define GEM_FONT_BIG        u8g2_font_6x12_tr
 #define GEM_FONT_SMALL      u8g2_font_tom_thumb_4x6_tr
+#ifndef GEM_FONT_BIG_CYR
 #define GEM_FONT_BIG_CYR    u8g2_font_6x12_t_cyrillic
+#endif
+#ifndef GEM_FONT_SMALL_CYR
 #define GEM_FONT_SMALL_CYR  u8g2_font_4x6_t_cyrillic
+#endif
 
 // Macro constants (aliases) for the keys (buttons) used to navigate and interact with menu (mapped to corresponsding u8g2 constants)
 #define GEM_KEY_NONE    0                         // No key presses are detected
